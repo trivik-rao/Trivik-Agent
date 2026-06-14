@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Utilities Inc. - Home</title>
+    <!-- Importing Open Sans to match Apex Utilities' clean corporate typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --apex-blue: #0A3161;       /* Official deep corporate utility blue */
+            --apex-orange: #E87722;     /* Official vibrant brand accent orange */
+            --apex-dark: #2D2D2D;       /* Slate typography shade */
+            --apex-light-gray: #F2F4F7; /* Cool background section tint */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--apex-dark);
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Branding Navbar */
+        header {
+            background-color: #ffffff;
+            border-bottom: 4px solid var(--apex-orange);
+            padding: 15px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo-container img {
+            height: 52px; /* Scales the official SVG elegantly */
+            display: block;
+        }
+
+        nav a {
+            margin-left: 28px;
+            text-decoration: none;
+            color: var(--apex-blue);
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--apex-orange);
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(10, 49, 97, 0.85), rgba(10, 49, 97, 0.65)), 
+                        url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: #ffffff;
+            padding: 100px 6% 140px 6%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Interactive Grid Layout */
+        .portal-grid {
+            max-width: 1200px;
+            margin: -60px auto 80px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .portal-card {
+            background: #ffffff;
+            padding: 35px 30px;
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(10, 49, 97, 0.08);
+            border-top: 5px solid var(--apex-blue);
+            transition: all 0.25s ease;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(10, 49, 97, 0.15);
+            border-top-color: var(--apex-orange);
+        }
+
+        .portal-card h3 {
+            color: var(--apex-blue);
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .portal-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555555;
+            margin-bottom: 25px;
+        }
+
+        .portal-card .btn {
+            display: inline-block;
+            background-color: var(--apex-blue);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .portal-card .btn:hover {
+            background-color: var(--apex-orange);
+        }
+
+        /* Demo Notice Area */
+        .demo-context {
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: var(--apex-light-gray);
+            border-radius: 6px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background-color: var(--apex-blue);
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+            border-top: 4px solid var(--apex-orange);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header with Official SVG Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="https://www.apexutilities.ca/wp-content/uploads/2025/08/logo-apex.svg" alt="Apex Utilities Inc.">
+        </div>
+        <nav>
+            <a href="#">Residential</a>
+            <a href="#">Commercial</a>
+            <a href="#">Safety & Education</a>
+            <a href="#">Customer Care</a>
+        </nav>
+    </header>
+
+    <!-- Hero Showcase Area -->
+    <section class="hero">
+        <h1>Energizing Alberta Communities</h1>
+        <p>Safe, reliable, and efficient natural gas delivery tailored for residential and industrial solutions across Alberta.</p>
+    </section>
+
+    <!-- Customer Access Grid -->
+    <div class="portal-grid">
+        <div class="portal-card">
+            <h3>My Account Portal</h3>
+            <p>Access secure account options to review utility consumption metrics, update details, or switch to paperless billing options.</p>
+            <a href="#" class="btn">Log In Now</a>
+        </div>
+        <div class="portal-card">
+            <h3>Rates & Utility Billing</h3>
+            <p>Understand the component breakdowns behind delivery fees, franchise options, and localized natural gas supply rates.</p>
+            <a href="#" class="btn">View Bill Details</a>
+        </div>
+        <div class="portal-card">
+            <h3>Service Connections</h3>
+            <p>Planning a project or setting up a distribution network asset route transfer? Initialize your utility relocation request tracking here.</p>
+            <a href="#" class="btn">Manage Service</a>
+        </div>
+    </div>
+
+    <!-- Sandbox Demo Notice -->
+    <div class="demo-context">
+        <strong>Simulation Space:</strong> This is a Demo portal mimics the live client branding framework for validation. Use the digital assistant terminal interface on the lower right dashboard frame to interact with the conversational AI architecture.
+    </div>
+
+    <!-- ====================================================================== -->
+    <!--            PASTE YOUR COPIED SALESFORCE EMBED SCRIPT BELOW             -->
+    <!-- ====================================================================== -->
+
+    <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00Dao00001QLDZ9',
+                'Web_Messaging',
+                'https://kemicard-agent-force-dev-ed.develop.my.site.com/ESWWebMessaging1780340224404',
+                {
+                    scrt2URL: 'https://kemicard-agent-force-dev-ed.develop.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://kemicard-agent-force-dev-ed.develop.my.site.com/ESWWebMessaging1780340224404/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+    <!-- ====================================================================== -->
+
+    <footer>
+        <p>&copy; 2026 Apex Utilities Inc. Configured for Sandbox Solution Demonstration Purposes.</p>
+    </footer>
+
+</body>
+</html>
