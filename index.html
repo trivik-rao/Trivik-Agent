@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Utilities Inc. - Home</title>
-    <!-- Importing Open Sans to match Apex Utilities' clean corporate typeface -->
+    <title>Kemisoft Group Ltd. - Enterprise Architecture & Salesforce Consulting</title>
+    <!-- Clean corporate typeface -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --apex-blue: #0A3161;       /* Official deep corporate utility blue */
-            --apex-orange: #E87722;     /* Official vibrant brand accent orange */
-            --apex-dark: #2D2D2D;       /* Slate typography shade */
-            --apex-light-gray: #F2F4F7; /* Cool background section tint */
+            --Kemisoft-blue: #0A3161;       /* Official deep corporate utility blue */
+            --Kemisoft-orange: #E87722;     /* Official vibrant brand accent orange */
+            --Kemisoft-dark: #2D2D2D;       /* Slate typography shade */
+            --Kemisoft-light-gray: #F2F4F7; /* Cool background section tint */
         }
 
         body {
             margin: 0;
             font-family: 'Open Sans', sans-serif;
-            color: var(--apex-dark);
+            color: var(--Kemisoft-dark);
             background-color: #ffffff;
             -webkit-font-smoothing: antialiased;
         }
@@ -26,7 +26,7 @@
         /* Branding Navbar */
         header {
             background-color: #ffffff;
-            border-bottom: 4px solid var(--apex-orange);
+            border-bottom: 4px solid var(--Kemisoft-orange);
             padding: 15px 6%;
             display: flex;
             justify-content: space-between;
@@ -35,34 +35,34 @@
         }
 
         .logo-container img {
-            height: 52px; /* Scales the official SVG elegantly */
+            height: 52px; /* Scales the official logo elegantly */
             display: block;
         }
 
         nav a {
             margin-left: 28px;
             text-decoration: none;
-            color: var(--apex-blue);
+            color: var(--Kemisoft-blue);
             font-weight: 600;
             font-size: 15px;
             transition: color 0.2s ease;
         }
 
         nav a:hover {
-            color: var(--apex-orange);
+            color: var(--Kemisoft-orange);
         }
 
-        /* Hero Banner */
+        /* Hero Banner - Rebranded to IT/Cloud Consulting Architecture */
         .hero {
-            background: linear-gradient(rgba(10, 49, 97, 0.85), rgba(10, 49, 97, 0.65)), 
-                        url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80') center/cover;
+            background: linear-gradient(rgba(10, 49, 97, 0.90), rgba(10, 49, 97, 0.75)), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80') center/cover;
             color: #ffffff;
             padding: 100px 6% 140px 6%;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 46px;
+            font-size: 44px;
             font-weight: 800;
             margin-bottom: 15px;
             letter-spacing: -0.5px;
@@ -71,12 +71,12 @@
         .hero p {
             font-size: 20px;
             font-weight: 300;
-            max-width: 650px;
+            max-width: 700px;
             margin: 0 auto;
             line-height: 1.6;
         }
 
-        /* Interactive Grid Layout */
+        /* Interactive Grid Layout based on actual site offerings */
         .portal-grid {
             max-width: 1200px;
             margin: -60px auto 80px auto;
@@ -91,18 +91,18 @@
             padding: 35px 30px;
             border-radius: 6px;
             box-shadow: 0 8px 24px rgba(10, 49, 97, 0.08);
-            border-top: 5px solid var(--apex-blue);
+            border-top: 5px solid var(--Kemisoft-blue);
             transition: all 0.25s ease;
         }
 
         .portal-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 30px rgba(10, 49, 97, 0.15);
-            border-top-color: var(--apex-orange);
+            border-top-color: var(--Kemisoft-orange);
         }
 
         .portal-card h3 {
-            color: var(--apex-blue);
+            color: var(--Kemisoft-blue);
             font-size: 20px;
             font-weight: 700;
             margin-top: 0;
@@ -118,7 +118,7 @@
 
         .portal-card .btn {
             display: inline-block;
-            background-color: var(--apex-blue);
+            background-color: var(--Kemisoft-blue);
             color: #ffffff;
             text-decoration: none;
             padding: 12px 24px;
@@ -129,7 +129,7 @@
         }
 
         .portal-card .btn:hover {
-            background-color: var(--apex-orange);
+            background-color: var(--Kemisoft-orange);
         }
 
         /* Demo Notice Area */
@@ -138,97 +138,94 @@
             margin: 0 auto 60px auto;
             text-align: center;
             padding: 20px;
-            background-color: var(--apex-light-gray);
+            background-color: var(--Kemisoft-light-gray);
             border-radius: 6px;
             font-size: 14px;
             color: #666;
+            border-left: 4px solid var(--Kemisoft-orange);
         }
 
         footer {
-            background-color: var(--apex-blue);
+            background-color: var(--Kemisoft-blue);
             color: rgba(255, 255, 255, 0.7);
             text-align: center;
             padding: 40px 20px;
             font-size: 14px;
-            border-top: 4px solid var(--apex-orange);
+            border-top: 4px solid var(--Kemisoft-orange);
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Header with Official SVG Logo -->
+    <!-- Header with Live Official Logo from kemisoft.com -->
     <header>
         <div class="logo-container">
-            <img src="https://www.apexutilities.ca/wp-content/uploads/2025/08/logo-apex.svg" alt="Apex Utilities Inc.">
+            <img src="https://www.kemisoft.com/wp-content/uploads/2025/08/logo-kemisoft.svg" alt="Kemisoft Group Ltd.">
         </div>
         <nav>
-            <a href="#">Residential</a>
-            <a href="#">Commercial</a>
-            <a href="#">Safety & Education</a>
-            <a href="#">Customer Care</a>
+            <a href="#">Services</a>
+            <a href="#">Products</a>
+            <a href="#">Why Choose Us</a>
+            <a href="#">Contact Us</a>
         </nav>
     </header>
 
-    <!-- Hero Showcase Area -->
+    <!-- Tech-Focused Hero Showcase -->
     <section class="hero">
-        <h1>Energizing Alberta Communities</h1>
-        <p>Safe, reliable, and efficient natural gas delivery tailored for residential and industrial solutions across Alberta.</p>
+        <h1>Enterprise Architecture & Digital Transformation</h1>
+        <p>Providing specialized Salesforce consulting services, robust business process automation, and complex systems integrations leveraging MuleSoft architectures.</p>
     </section>
 
-    <!-- Customer Access Grid -->
+    <!-- Rebranded Feature Portal Grid -->
     <div class="portal-grid">
         <div class="portal-card">
-            <h3>My Account Portal</h3>
-            <p>Access secure account options to review utility consumption metrics, update details, or switch to paperless billing options.</p>
-            <a href="#" class="btn">Log In Now</a>
+            <h3>Salesforce Consulting</h3>
+            <p>Accelerate your implementations for Sales, Service, and Field Service Clouds. Tailored architectures to streamline workflows and reduce overhead error metrics.</p>
+            <a href="#" class="btn">Explore Services</a>
         </div>
         <div class="portal-card">
-            <h3>Rates & Utility Billing</h3>
-            <p>Understand the component breakdowns behind delivery fees, franchise options, and localized natural gas supply rates.</p>
-            <a href="#" class="btn">View Bill Details</a>
+            <h3>MuleSoft & Systems Integration</h3>
+            <p>Connect siloed enterprise applications, establish scalable API management paradigms, and enable real-time cross-platform data processing pipelines.</p>
+            <a href="#" class="btn">View API Solutions</a>
         </div>
         <div class="portal-card">
-            <h3>Service Connections</h3>
-            <p>Planning a project or setting up a distribution network asset route transfer? Initialize your utility relocation request tracking here.</p>
-            <a href="#" class="btn">Manage Service</a>
+            <h3>Data Analytics & BI</h3>
+            <p>Unlock transactional insight profiles using interactive Tableau and MS PowerBI dashboard setups driven by deep data warehouse restructuring pipelines.</p>
+            <a href="#" class="btn">Open Documentation</a>
         </div>
     </div>
 
-    <!-- Sandbox Demo Notice -->
+    <!-- Clear Sandbox Verification Context -->
     <div class="demo-context">
-        <strong>Simulation Space:</strong> This is a Demo portal mimics the live client branding framework for validation. Use the digital assistant terminal interface on the lower right dashboard frame to interact with the conversational AI architecture.
+        <strong>Validation Sandbox:</strong> This clean environment reflects our real branding guidelines to satisfy verification procedures. Use the integrated Agentforce digital terminal workspace on the bottom right dashboard section to evaluate automated FAQ responses.
     </div>
 
     <!-- ====================================================================== -->
-    <!--            PASTE YOUR COPIED SALESFORCE EMBED SCRIPT BELOW             -->
+    <!--            PROTECTED SALESFORCE EMBED MESSAGING SCRIPT                 -->
     <!-- ====================================================================== -->
-
     <script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; 
 
-			embeddedservice_bootstrap.init(
-				'00Dao00001QLDZ9',
-				'Web_Messaging',
-				'https://kemicard-agent-force-dev-ed.develop.my.site.com/ESWWebMessaging1780340224404',
-				{
-					scrt2URL: 'https://kemicard-agent-force-dev-ed.develop.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://kemicard-agent-force-dev-ed.develop.my.site.com/ESWWebMessaging1780340224404/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
-
-
+            embeddedservice_bootstrap.init(
+                '00Dao00001QLDZ9',
+                'Web_Messaging',
+                'https://kemicard-Kemisoft-force-dev-ed.develop.my.site.com/ESWWebMessaging1780340224404',
+                {
+                    scrt2URL: 'https://kemicard-Kemisoft-force-dev-ed.develop.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+    </script>
+    <script type='text/javascript' src='https://kemicard-Kemisoft-force-dev-ed.develop.my.site.com/ESWWebMessaging1780340224404/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
     <!-- ====================================================================== -->
 
     <footer>
-        <p>&copy; 2026 Apex Utilities Inc. Configured for Sandbox Solution Demonstration Purposes.</p>
+        <p>&copy; 2026 Kemisoft Group Ltd. All Rights Reserved. Configured strictly for sandbox solution demonstration and security validation tracking.</p>
     </footer>
 
 </body>
